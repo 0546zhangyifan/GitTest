@@ -1,0 +1,37 @@
+@charset "UTF-8";
+body, p, ul, ol, li, dl, dt, dd, h1, h2, h3, h4, h5, h6, form, input, img, fieldset, select, legend {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-size: 16px; }
+
+ul, ol {
+  list-style: none; }
+
+a {
+  text-decoration: none;
+  color: #000; }
+
+em, i, b, strong, h1, h2, h3, h4, h5, h6 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px; }
+
+img, fieldset {
+  border: 0; }
+
+img {
+  vertical-align: middle; }
+
+.clearfn:after {
+  /*万能清除法*/
+  content: "";
+  clear: both;
+  height: 0;
+  display: block;
+  visibility: hidden;
+  overflow: hidden; }
+
+.clearfn {
+  zoom: 1; }
