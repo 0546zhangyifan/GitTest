@@ -6,6 +6,20 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "12302115",
+      "name": "垃圾",
+      "font_class": "laji",
+      "unicode": "e621",
+      "unicode_decimal": 58913
+    },
+    {
+      "icon_id": "8760751",
+      "name": "地区",
+      "font_class": "diqu",
+      "unicode": "e754",
+      "unicode_decimal": 59220
+    },
+    {
       "icon_id": "9186569",
       "name": "选项",
       "font_class": "xuanxiang",

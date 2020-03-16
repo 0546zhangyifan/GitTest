@@ -98,7 +98,7 @@ define(["jquery"], function($){
                         <nav class="navRight" id="${goodsArr[i].title}">
                         </nav>
                     </article>`);
-                    node.appendTo($("section"));
+                    node.appendTo($(".indexCenter1"));
 
                     var childArr = goodsArr[i].childs;
                     for(let j = 0;j < childArr.length;j++){
@@ -127,8 +127,8 @@ define(["jquery"], function($){
                             <div class="discount">
                             ${childArr[j].prompt}
                             </div>
-                            <span class="priceDelete">￥&nbsp;${childArr[j].originalPrice}</span>
-                            <span class="price">￥&nbsp;${childArr[j].price}</span>
+                            <span class="priceDelete">￥&nbsp;<i>${childArr[j].originalPrice}</i></span>
+                            <span class="price">￥&nbsp;<i>${childArr[j].price}</i></span>
                             <div class="save">
                                 <span>节省了:</span>
                                 <span class="saveMoney">￥&nbsp;${childArr[j].originalPrice - childArr[j].price}&nbsp;(${Math.round(((childArr[j].originalPrice - childArr[j].price) / childArr[j].originalPrice)*100)}%)</span>

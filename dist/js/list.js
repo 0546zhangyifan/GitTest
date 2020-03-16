@@ -3,8 +3,6 @@ require.config({
     paths: {
         "jquery": "jquery-1.11.3",
         "jquery-cookie": "jquery.cookie",
-        //引入banner图效果
-        "banner": "mainBanner",
         "mainlist": "mainList",
         "goodsCar":"goodsCar"
     },
@@ -13,12 +11,8 @@ require.config({
         "jquery-cookie": ["jquery"]
 		}
 })
-
-require(["banner", "mainlist", "goodsCar"], function(mainBanner, mainList,goodsCar){
-    mainBanner.bannerImg();
-    mainBanner.bannerBottom();
+require(["mainlist", "goodsCar"], function( mainList,goodsCar){
     mainList.topList();
-    mainList.goodsList();
     goodsCar.addCars();
     goodsCar.backTop();
 })

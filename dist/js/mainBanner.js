@@ -3,9 +3,9 @@ define(["jquery"], function($){
         var lbBig = $(".lunbo_box");
         var lbBox = $(".lunbo_img");
         var lbImg = $(".lunbo_img").find("img");
-        var navBtn = $(".lunbo_btn").find("nav");
-        var iNow = 0;
-        var timer = null;
+        let navBtn = $(".lunbo_btn").find("nav");
+        let iNow = 0;
+        let timer = null;
     
         timer = setInterval(function(){
             iNow++;
@@ -59,14 +59,38 @@ define(["jquery"], function($){
         }
         
     }
-    function page(){//页面渲染
-
+    function bannerBottom(){
+        let timer = null;
+        let iNow = 0;
+        $(".bannerBoxRight img").click(function(){
+            iNow = $(this).index();
+            btmTab();
+        })
+        function btmTab(){
+            if(iNow == 3){
+                iNow = 0;
+            }
+            $(".bannerImgBox img").removeClass("bottomImg").eq(iNow).addClass("bottomImg");
+            $(".bannerImgBox img").hide().css("opacity",0.4).eq(iNow).show().animate({opacity:1},2000);
+            $(".bannerBoxRight img").removeClass("bottomBtnImg").eq(iNow).addClass("bottomBtnImg");
+        }
+        timer = setInterval(function(){
+            iNow++;
+            btmTab();
+        },3000);
+        $(".bannerBox .bannerBoxLeft,.bannerBoxRight").mouseenter(function(){
+            clearInterval(timer);
+        }).mouseleave(function(){
+            timer = setInterval(function(){
+                iNow++;
+                btmTab();
+            },2000)
+        })
     }
-
 
     return {
         bannerImg: bannerImg,
-        page: page
+        bannerBottom:bannerBottom
     }
 })
 
