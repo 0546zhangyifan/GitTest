@@ -1,0 +1,169 @@
+main{
+    width: 94%;
+    margin: 0 auto;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    max-width: 1240px;
+    .mainHtml_cart{
+        margin-bottom:5px;
+        a{
+            display: inline-block;
+            color: #000;
+            padding: 0px 10px 0 0;
+        }
+        i{
+            color: #000;
+            border-left: 1px solid #000;
+            padding: 0px 10px;
+        }
+    }
+    h3{
+        margin-top: 0px;
+    }
+    .column_main{
+        width: 100%;
+        display: flex;
+        .column_main_left{
+            width: 50%;
+            .mineInfo{
+                width: 100%;
+                padding-bottom: 10px;
+                border-bottom: 1px solid #ccc;
+                div{
+                    height: 60px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    margin: 0px;
+                    position: relative;
+                    p{
+                        margin: 0;
+                        margin-left: 20px;
+                        font-size: 18px;
+                        i{
+                            color: #e02b27;
+                            padding-left: 5px;
+                        }
+                    }
+                    .boxInput{
+                        width: 60%;
+                        margin-right: 60px;
+                        height: 60px;
+                        input{
+                            display: block;
+                            height: 40px;
+                            width: 100%;
+                            margin-top: 8px;
+                            border: 1px solid #c2c2c2;
+                        }
+                        .tishi{
+                            display: none;
+                            color: #e02b27;
+                            font-size: 12px;
+                            height: 16px;
+                            line-height: 16px;
+                            margin: 0;
+                            padding: 0;
+                        }
+                    }
+                    .testTrue{
+                        display: none;
+                        position: absolute;
+                        font-size: 24px;
+                        font-weight: 900;
+                        color: #3CA400;
+                        right: 75px;
+                        top: 13px;
+                    }
+                }
+                
+            }
+            .inputPassword{
+                height: 40px;
+                margin-top: 10px;
+            }
+            .privacy{
+                display: flex;
+                justify-content: start;
+                height: 40px;
+                margin-top: 10px;
+                #privacy{
+                    min-width: 16px;
+                    min-height: 16px;
+                    margin-left: 15px;
+                    margin-right: 20px;
+                }
+                span{
+                    height: 40px;
+                    line-height: 20px;
+                    cursor: pointer;
+                    overflow: hidden;
+                }
+            }
+            .inputChoice{
+                display: flex;
+                justify-content: start;
+                height: 40px;
+                margin-top: 10px;
+                #choice{
+                    min-width: 16px;
+                    min-height: 16px;
+                    margin-left: 15px;
+                    margin-right: 20px;
+                }
+                span{
+                    height: 40px;
+                    line-height: 20px;
+                    cursor: pointer;
+                    overflow: hidden;
+                }
+            }
+            #registerBtn{
+                margin-top: 50px;
+                margin-left: 40%;
+                margin-bottom: 20px;
+                width: 120px;
+                height: 40px;
+                border-radius: 5px;
+                background-color: #0199D5;
+                color: #fff;
+                border: 0px;
+            }
+        }
+        .column_main_right{
+            width: 50%;
+            .column_main_right_top{
+                font-size: 26px;
+                margin-bottom: 10px;
+            }
+            .description{
+                margin-bottom: 10px;
+                padding-left: 20px;
+                p{
+                    font-size: 26px;
+                    font-weight: 400;
+                    margin-bottom: 10px;
+                    color: #000;
+                }
+                span{
+                    font-size: 18px;
+                    color: #757678;
+                    line-height: 18px;
+                }
+            }
+        }
+    }
+}
+@media all and (max-width:850px){
+    main{
+        .column_main{
+            flex-wrap: wrap;
+            .column_main_left{
+                width: 100%;
+            }
+            .column_main_right{
+                width: 100%;
+            }
+        }
+    }
+}
